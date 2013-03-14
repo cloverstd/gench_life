@@ -41,12 +41,12 @@ def magic(msg):
     msg.news_msg(news, stat=0)
     # 返回图文消息
     news = [    # news 最多 10 条，如果超过则只返回前 10 条
-            ["标题“， "描述", "图片链接", "链接"],
-            ["标题“， "描述", "图片链接", "链接"],
-            ["标题“， "描述", "图片链接", "链接"],
+            ["标题", "描述", "图片链接", "链接"],
+            ["标题", "描述", "图片链接", "链接"],
+            ["标题", "描述", "图片链接", "链接"],
             ]
     news_msg = msg.news_msg(news)
     return render.news(news_msg)
     """
-    text = msg.text_msg(u"测试一下呗")
-    return render.text(text)
+    music = msg.music_msg("一生所爱", "http://hui.lu")
+    return render.music(music)
