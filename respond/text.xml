@@ -1,0 +1,9 @@
+$def with (msg)
+<xml>
+ <ToUserName><![CDATA[$msg[0]]]></ToUserName>
+ <FromUserName><![CDATA[$msg[1]]]></FromUserName>
+ <CreateTime>$msg[2]</CreateTime>
+ <MsgType><![CDATA[text]]></MsgType>
+ <Content><![CDATA[$msg[3]]]></Content>
+ <FuncFlag>$msg[4]</FuncFlag>
+ </xml>
