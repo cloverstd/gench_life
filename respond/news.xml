@@ -1,0 +1,18 @@
+$def with(msg)
+<xml>
+<ToUserName><![CDATA[$msg[0]]]></ToUserName>
+<FromUserName><![CDATA[$msg[1]]]></FromUserName>
+<CreateTime>$msg[2]</CreateTime>
+<MsgType><![CDATA[news]]></MsgType>
+<ArticleCount>$msg[3]</ArticleCount>
+<Articles>
+$for news in msg[4]:
+    <item>
+    <Title><![CDATA[$news[0]]]></Title> 
+    <Description><![CDATA[$news[1]]]></Description>
+    <PicUrl><![CDATA[$news[2]]]></PicUrl>
+    <Url><![CDATA[$news[3]]]></Url>
+    </item>
+</Articles>
+<FuncFlag>$msg[5]</FuncFlag>
+</xml> 

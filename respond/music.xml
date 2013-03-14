@@ -1,0 +1,14 @@
+$def with (msg)
+<xml>
+<ToUserName><![CDATA[$msg[0]]]></ToUserName>
+<FromUserName><![CDATA[$msg[1]]]></FromUserName>
+<CreateTime>$msg[2]</CreateTime>
+<MsgType><![CDATA[music]]></MsgType>
+<Music>
+<Title><![CDATA[$msg[3]]]></Title>
+<Description><![CDATA[$msg[4]]]></Description>
+<MusicUrl><![CDATA[$msg[5]]]></MusicUrl>
+<HQMusicUrl><![CDATA[$msg[6]]]></HQMusicUrl>
+</Music>
+<FuncFlag>$msg[7]</FuncFlag>
+</xml>
